@@ -1,2 +1,0 @@
-# codename-portfolio
-Portfolio rep.
