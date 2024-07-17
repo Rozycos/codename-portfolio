@@ -1,22 +1,42 @@
+
 * {
     box-sizing: border-box;
 }
 
-// html {
-//     font-family: var(--font-inter);
+html {
+    font-family: $font-inter;
+ }
+
+
+
+// body {
+//     // font-family: $font-nunito;
+//     background: rgb(15,22,40,1);
+//     background: linear-gradient(127deg, rgba(77,82,96,1) 0%, rgba(20,29,51,1) 22%, rgba(15,22,40,1) 39%, rgba(5,10,22,1) 100%);
 // }
 
-body {
-    // font-family: $font-nunito;
-    background: rgb(15,22,40,1);
-    background: linear-gradient(127deg, rgba(77,82,96,1) 0%, rgba(20,29,51,1) 22%, rgba(15,22,40,1) 39%, rgba(5,10,22,1) 100%);
+.container {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1720px;
-}   
+.container--header-background {
+    background: url('/codename-portfolio/public/next.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+}
+
+// .container--full {
+    
+// }
 
 .hide{
     display: none;
 }
+
+// h1 {
+//     font-family: $font-roboto;
+//   }

@@ -1,5 +1,5 @@
 import { Inter, Roboto_Mono } from "next/font/google";
-//import "./globals.css";
+//import "./globals.scss";
 
 export const metadata = {
   title: "Create Next App",
@@ -8,18 +8,20 @@ export const metadata = {
 
 export const inter = Inter({
   subsets: ['latin'],
+  variable: '--font-inter',
   display: 'swap',
 });
  
 export const roboto_mono = Roboto_Mono({
   subsets: ['latin'],
+  variable: '--font-roboto-mono',
   display: 'swap',
 });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${roboto_mono.variable}`}>{children}</body>
     </html>
   );
 }
