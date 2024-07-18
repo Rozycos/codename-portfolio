@@ -1,0 +1,85 @@
+@keyframes bounce {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+}
+
+.scroll-icon{
+	position:relative;
+    width: 4.6875rem; /*Adjust according to your need*/
+	height: 6.25rem; /*Adjust according to your need*/
+    //z-index: 10;
+	&__name{
+        width: 100%;
+        font-family: "Ubuntu Mono", monospace; /*Use font according to your need*/
+        font-weight: bold; /*Use font according to your need*/
+        font-size: 1.5rem; 
+        color: #CEB7FF;
+        text-align: center;
+        text-transform:uppercase;
+    }
+    &__box{
+        position: relative;
+        width: 3.75rem;
+        height: 4.6875rem;
+        border: 5px solid #CEB7FF;
+        border-radius: 40px;
+        animation: bounce 1s infinite;
+        //z-index: 100;
+        &:hover{
+            animation: none;
+        }
+    }
+
+    &--position{
+        margin: 0 auto; /*set proper position, ex. margin 0 auto or flex*/
+    }
+
+    &__arrow{
+        position: relative;
+        margin: 0 auto;
+        width: .3125rem;
+        height: 1.25rem;
+        background-color:#CEB7FF;
+        border-radius: 5px;
+        &::before, &::after{
+            content:"";
+            position: absolute;
+            width: .3125rem;
+            height: 1.25rem;
+            background-color:#CEB7FF;
+            border-radius: 5px;
+        }
+        // &::after{
+        //     content:"";
+        //     position: absolute;
+        //     width: .3125rem;
+        //     height: 1.25rem;
+        //     background-color:#CEB7FF;
+        //     border-radius: 5px;
+        // }
+    }
+
+    &__arrow-up{
+        transform: translate(-110%) rotate(45deg); 
+        &::before{
+            transform: translate(8px, -8px) rotate(-90deg);
+        }
+        &:after{
+            transform: translate(155%) rotate(-45deg);
+        }    
+    }
+
+    &__arrow-down{
+        transform: translate(110%) rotate(-135deg);
+        &::before{
+            transform: translate(8px, -8px) rotate(90deg);
+        }
+        &::after{
+            transform: translate(155%) rotate(-45deg);
+        }
+    }
+}

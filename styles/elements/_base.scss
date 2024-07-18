@@ -4,39 +4,138 @@
 }
 
 html {
-    font-family: $font-inter;
+    font-family: $font-ubuntu;
  }
-
-
-
-// body {
-//     // font-family: $font-nunito;
-//     background: rgb(15,22,40,1);
-//     background: linear-gradient(127deg, rgba(77,82,96,1) 0%, rgba(20,29,51,1) 22%, rgba(15,22,40,1) 39%, rgba(5,10,22,1) 100%);
-// }
 
 .container {
     width: 100vw;
-    height: 100vh;
     max-width: 100%;
     margin: 0 auto;
-}
-
-.container--header-background {
-    background: url('/codename-portfolio/public/next.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-	background-size: cover;
-}
-
-// .container--full {
     
-// }
+    &--header-bg {
+        position: relative;
+        height: 100vh;
+        background: url('../../public/images/bg1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            height: 70vw;
+            background: url('../../public/images/frame1.webp') no-repeat;
+            background-size: contain;
+            background-position: top center;
+            transform: translate(-50%, 65%) rotate(0deg);
+            clip-path: inset(0 0 65% 0);
+            z-index: -1;
+        }
+    }
+    
+    &--section1-bg {
+        position: relative;
+        height: 100vh;
+        background: url('../../public/images/bg3.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            height: 70vw;
+            background: url('../../public/images/frame1.webp') no-repeat;
+            background-size: contain;
+            background-position: top center;
+            transform: translate(-50%, 65%) rotate(90deg);
+            clip-path: inset( 0 65% 0 0);
+            z-index: -1;
+        }
+    }
+    
+    &--section2-bg {
+        position: relative;
+        height: 100vh;
+        background: url('../../public/images/bg4.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            height: 70vw;
+            background: url('../../public/images/frame1.webp') no-repeat;
+            background-size: contain;
+            background-position: top center;
+            transform: translate(-50%, 65%) rotate(180deg);
+            clip-path: inset( 65% 0 0 0);
+            z-index: -1;
+        }
+    }
+    
+    &--section3-bg {
+        position: relative;
+        height: 100vh;
+        background: url('../../public/images/bg6.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        overflow: hidden;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            height: 70vw;
+            background: url('../../public/images/frame1.webp') no-repeat;
+            background-size: contain;
+            background-position: top center;
+            transform: translate(-50%, 65%) rotate(270deg);
+            clip-path: inset( 0 0 0 65% );
+            z-index: -1;
+        }
+    }
+    
+    &--footer-bg {
+        position: relative;
+        height: 100vh;
+        background: url('../../public/images/bg8.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        overflow: hidden;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            height: 70vw;
+            background: url('../../public/images/frame1.webp') no-repeat;
+            background-size: contain;
+            background-position: top center;
+            transform: translate(-50%, 65%) rotate(0deg);
+            clip-path: inset(0 0 65% 0);
+            z-index: -1;
+            
+        }
+    }
+}
 
 .hide{
     display: none;
 }
-
-// h1 {
-//     font-family: $font-roboto;
-//   }
