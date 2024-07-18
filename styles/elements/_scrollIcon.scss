@@ -17,7 +17,7 @@
         font-family: "Ubuntu Mono", monospace; /*Use font according to your need*/
         font-weight: bold; /*Use font according to your need*/
         font-size: 1.5rem; 
-        color: #CEB7FF;
+        color: $color-primary;
         text-align: center;
         text-transform:uppercase;
     }
@@ -25,7 +25,7 @@
         position: relative;
         width: 3.75rem;
         height: 4.6875rem;
-        border: 5px solid #CEB7FF;
+        border: 5px solid $color-primary;
         border-radius: 40px;
         animation: bounce 1s infinite;
         //z-index: 100;
@@ -43,14 +43,14 @@
         margin: 0 auto;
         width: .3125rem;
         height: 1.25rem;
-        background-color:#CEB7FF;
+        background-color:$color-primary;
         border-radius: 5px;
         &::before, &::after{
             content:"";
             position: absolute;
             width: .3125rem;
             height: 1.25rem;
-            background-color:#CEB7FF;
+            background-color:$color-primary;
             border-radius: 5px;
         }
         // &::after{
