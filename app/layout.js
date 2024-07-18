@@ -1,5 +1,5 @@
 import { Inter, Roboto_Mono } from "next/font/google";
-//import "./globals.scss";
+import '../styles/globals.scss';
 
 export const metadata = {
   title: "Create Next App",
