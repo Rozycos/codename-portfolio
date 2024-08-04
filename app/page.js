@@ -6,9 +6,9 @@ import Main from '@/components/Main/Main';
 export default function Home() {
   return (
     <>
-      <Header/>
+      {/* <Header/> */}
       <Main/>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }

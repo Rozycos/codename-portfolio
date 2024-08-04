@@ -1,10 +1,14 @@
+import Section1 from "./Section/Section1";
+
 export default function Main() {
     return (
         <>
             <main>
-                <section className='container container--section1-bg'></section>
+                <Section1/>
                 <section className='container container--section2-bg'></section>
                 <section className='container container--section3-bg'></section>
+                <section className='container container--section4-bg'></section>
+                <section className='container container--section5-bg'></section>
             </main>
         </>
     );

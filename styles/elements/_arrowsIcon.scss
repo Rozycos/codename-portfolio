@@ -1,0 +1,229 @@
+// @keyframes bounce {
+// 	0%, 100% {
+// 		transform: translateY(0);
+// 	}
+// 	50% {
+// 		transform: translateY(5px);
+// 	}
+// }
+
+// .arrow-icon{
+// 	position:relative;
+//     width: 4.6875rem; /*Adjust according to your need*/
+// 	height: 6.25rem; /*Adjust according to your need*/
+//     //z-index: 10;
+// 	&__name{
+//         width: 100%;
+//         margin:.5rem 0;
+//         font-family: "Ubuntu Mono", monospace; /*Use font according to your need*/
+//         font-weight: bold; /*Use font according to your need*/
+//         font-size: 1.5rem; 
+//         color: $color-primary;
+//         text-align: center;
+//         text-transform:uppercase;
+//     }
+//     &__box{
+//         position: relative;
+//         width: 3.75rem;
+//         height: 4.6875rem;
+//         border: 5px solid $color-primary;
+//         border-radius: 40px;
+//         animation: bounce 1s infinite;
+        
+//         &:hover{
+//             animation: none;
+//         }
+//         //z-index: 100;
+
+//     }
+
+//     &--position{
+//         margin: 0 auto; /*set proper position, ex. margin 0 auto or flex*/
+//     }
+
+//     &__arrow{
+//         position: relative;
+//         margin: 0 auto;
+//         width: .3125rem;
+//         height: 1.25rem;
+//         background-color:$color-primary;
+//         border-radius: 5px;
+//         &::before {
+//             content:"";
+//             position: absolute;
+//             width: .3125rem;
+//             height: 1.25rem;
+//             background-color:$color-primary;
+//             border-radius: 5px;
+//         }
+//         &::after{
+//             content:"";
+//             position: absolute;
+//             width: .3125rem;
+//             height: 2.5rem;
+//             background-color:#CEB7FF;
+//             border-radius: 5px;
+//         }
+//     }
+
+//     &__arrow{
+//         transform: translate(-110%) rotate(45deg); 
+//         &::before{
+//             transform: translate(8px, -8px) rotate(-90deg);
+//         }
+//         &:after{
+//             transform: translate(255%, -5px) rotate(-45deg);
+//         }    
+//     }
+
+//     &__orientation-dwn {
+//         transform: rotate(180deg);
+//     }
+// }
+
+// .arrows{
+//     width: 10rem;
+//     height: 10rem;
+//     display: flex;
+//     justify-content: space-between;
+//     //animation: bounce 1s infinite;
+//     &:hover{
+//         animation: none;
+//     }
+// }
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+  }
+  
+  .arrow-icon {
+    position: relative;
+    width: 4.6875rem;
+    height: 10.25rem;
+    // display:flex;
+    // flex-direction: column;
+    // justify-content: space-between; // Dostosuj według potrzeby
+    // align-items: center;
+    // gap:1rem;
+
+  
+    &__name {
+      width: 100%;
+      margin: .5rem 0;
+      font-family: "Ubuntu Mono", monospace;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: $color-primary;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  
+    &__box {
+      position: relative;
+      width: 3.75rem;
+      height: 4.6875rem;
+      border: 5px solid $color-primary;
+      border-radius: 40px;
+      animation: bounce 1s infinite;
+  
+      &:hover {
+        animation: none;
+      }
+    }
+  
+    &--position {
+      margin: 0 auto;
+    }
+  
+    &__arrow {
+      position: relative;
+      margin: 0 auto;
+      width: .3125rem;
+      height: 1.25rem;
+      background-color: $color-primary;
+      border-radius: 5px;
+  
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $color-primary;
+        border-radius: 5px;
+      }
+  
+      &::before {
+        width: .3125rem;
+        height: 1.25rem;
+      }
+  
+      &::after {
+        width: .3125rem;
+        height: 2.5rem;
+        background-color: #CEB7FF;
+      }
+  
+      transform: translate(-110%) rotate(45deg);
+  
+      &::before {
+        transform: translate(8px, -8px) rotate(-90deg);
+      }
+  
+      &::after {
+        transform: translate(255%, -5px) rotate(-45deg);
+      } 
+    }
+  
+    &__arrow-dwn {
+        position: relative;
+        margin: 0 auto;
+        width: .3125rem;
+        height: 1.25rem;
+        background-color: $color-primary;
+        border-radius: 5px;
+    
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $color-primary;
+          border-radius: 5px;
+        }
+    
+        &::before {
+          width: .3125rem;
+          height: 1.25rem;
+        }
+    
+        &::after {
+          width: .3125rem;
+          height: 2.5rem;
+          background-color: #CEB7FF;
+        }
+    
+        transform: translate(100%, 25px) rotate(225deg);
+    
+        &::before {
+          transform: translate(8px, -8px) rotate(-90deg);
+        }
+    
+        &::after {
+          transform: translate(255%, -5px) rotate(-45deg);
+        }
+    // &__orientation-dwn {
+    //   transform: rotate(180deg);
+    // }
+    }
+  }
+  
+  .arrows {
+    width:160px;
+    display: flex;
+    justify-content: space-between; // Dostosuj według potrzeby
+    align-items: center;
+  }
+  

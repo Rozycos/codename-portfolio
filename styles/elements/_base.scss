@@ -12,7 +12,7 @@ html {
     max-width: 100%;
     margin: 0 auto;
     
-    &--header-bg {
+    &--section1-bg {
         position: relative;
         height: 100vh;
         background: url('../../public/images/bg1.png');
@@ -36,7 +36,7 @@ html {
         }
     }
     
-    &--section1-bg {
+    &--section2-bg {
         position: relative;
         height: 100vh;
         background: url('../../public/images/bg3.png');
@@ -60,7 +60,7 @@ html {
         }
     }
     
-    &--section2-bg {
+    &--section3-bg {
         position: relative;
         height: 100vh;
         background: url('../../public/images/bg4.png');
@@ -84,7 +84,7 @@ html {
         }
     }
     
-    &--section3-bg {
+    &--section4-bg {
         position: relative;
         height: 100vh;
         background: url('../../public/images/bg6.png');
@@ -109,7 +109,7 @@ html {
         }
     }
     
-    &--footer-bg {
+    &--section5-bg {
         position: relative;
         height: 100vh;
         background: url('../../public/images/bg8.png');
