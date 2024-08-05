@@ -1,4 +1,4 @@
-import Section1 from "./Sections/Section1";
+import Section1 from "./Sections/Section1/Section1";
 
 export default function Main() {
     return (
