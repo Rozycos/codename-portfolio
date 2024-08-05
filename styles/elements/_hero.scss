@@ -1,0 +1,65 @@
+.hero{
+    p{
+        color: $color-primary;
+        font-size: 3.625rem;
+        font-weight: bold;
+        text-align: center;
+        
+        @include mobile{
+            font-size: 2rem;
+        }
+    }
+    h1{
+        color: $color-primary;
+        font-size: 3.625rem;
+        text-align: center;
+        
+        @include mobile{
+            font-size: 1.5rem;
+        }
+    }
+
+    &__content{
+        max-width: 52.0625rem;
+        background-color: $color-black;
+        border: 3px solid $color-primary;
+
+        @include mobile{
+            border: 1px solid $color-primary;
+        }
+        
+        p{
+            color: $color-white-secondary;
+            font-size: 1.5rem;
+            //text-align: center;
+            font-weight:400;
+            
+            @include mobile{
+                font-size: 1rem;
+            }  
+        }
+
+        &-sqr{
+            position: relative;
+            width: 3.75rem;
+            //height: 3.75rem;
+            border: 0.3125rem solid $color-primary;
+            border-radius: 5px;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 3rem;
+                //height: 3.75rem;
+                border: 0.3125rem solid $color-primary;
+                border-radius: 5px;
+                transform: rotate(90deg) translate(35%, 290%);
+                
+            }
+
+            &--up{
+                transform: translate(-20px, -20px);
+
+            }
+        }
+    }
+}

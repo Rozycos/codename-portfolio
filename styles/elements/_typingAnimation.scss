@@ -7,5 +7,5 @@
   
   @keyframes blink {
     from, to { background-color: transparent; }
-    50% { background-color: black; }
+    50% { background-color: $color-primary; }
   }

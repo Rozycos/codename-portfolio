@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 export default function TypingAnimation() {
-    const texts = ["Developer", "Przemek Malec", "pixelcrafter.eu"];
+    const texts = ["Developer", "Przemek Malec", "PixelCrafter.eu"];
     const [currentText, setCurrentText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
     const [loop, setLoop] = useState(0);
