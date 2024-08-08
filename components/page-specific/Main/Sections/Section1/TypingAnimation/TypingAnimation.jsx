@@ -1,8 +1,8 @@
 "use client"
 import { useState, useEffect } from 'react';
 
-export default function TypingAnimation() {
-    const texts = ["Developer", "Przemek Malec", "PixelCrafter.eu"];
+export default function TypingAnimation({text}) {
+    const texts = text;
     const [currentText, setCurrentText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
     const [loop, setLoop] = useState(0);
@@ -35,10 +35,9 @@ export default function TypingAnimation() {
   
     return (
       
-        <h1>
-          I Am {currentText}
-          <span className="cursor">|</span>
-        </h1>
+        <>
+          {currentText}
+        </>
       
     );
 }
